@@ -6,11 +6,13 @@ const ProductCard = ({ product }) => {
       <div className="card h-100">
         <img src={product.image} className="card-img-top" alt={product.product_name} />
         <div className="card-body">
+
           <h5 className="card-title">{product.product_name}</h5>
           <p className="card-text">Brand: {product.brand}</p>
           <p className="card-text">Category: {product.category}</p>
           <p className="card-text">Price: ${product.price.toFixed(2)}</p>
           <p className="card-text">Quantity: {product.quantity}</p>
+          
         </div>
       </div>
     </div>
